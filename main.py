@@ -14,7 +14,7 @@ logger = logging.getLogger(__name__)
 
 def load_config():
     try:
-        with open('d.yaml', 'r') as file:
+        with open('config.yaml', 'r') as file:
             return yaml.safe_load(file)
     except FileNotFoundError:
         logger.warning("Config file not found")
